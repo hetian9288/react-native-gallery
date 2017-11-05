@@ -1,6 +1,7 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component,  } from 'react';
+import PropTypes from 'prop-types'
 import {
-  View
+  View, ViewPropTypes
 } from 'react-native';
 
 import Image from 'react-native-transformable-image';
@@ -11,7 +12,7 @@ import {createResponder} from 'react-native-gesture-responder';
 export default class Gallery extends Component {
 
   static propTypes = {
-    ...View.propTypes,
+    ...ViewPropTypes,
     images: PropTypes.array,
 
     initialPage: PropTypes.number,
